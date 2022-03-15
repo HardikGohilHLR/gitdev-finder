@@ -1,5 +1,5 @@
 /* Common css */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Manrope', sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 ol, ul { list-style: none; } 
 body { overflow-x: hidden;  }
 a { display: inline-block; text-decoration: none; }
@@ -7,19 +7,50 @@ img { width: 100%; font-size: 0; }
 input { outline: none; }
 button { background: none; outline: none; border: none; }
 
-
+.flex { display: flex; }
 .content { background-color: #1f2632; height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; }
-.advice-block-wpr { width: 100%; max-width: 600px; position: relative; background-color: #323a49; padding: 40px; border-radius: 15px; text-align: center; }
-.advice-number { margin-bottom: 25px; }
-.advice-number h3 { font-size: 12px; line-height: 18px; font-family: 'Manrope', sans-serif; font-weight: 800; text-transform: uppercase; color: #52ffa8; margin-bottom: 25px; letter-spacing: 3px; }
-.advice-content h2 { font-size: 28px; line-height: 36px; font-family: 'Manrope', sans-serif; font-weight: 700; color: #cee3e9; }
-.line { margin: 40px 0 20px; }
-.advice-refresh { width: 50px; height: 50px; background-color: #52ffa8; display: flex; align-items: center; justify-content: center; border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); bottom: -25px; cursor: pointer; } 
-.advice-refresh svg { width: 20px; }
-.skeleton { margin: 0 auto 10px; background: linear-gradient( 90deg, hsl(217, 19%, 38%), hsl(193, 38%, 86%) , hsl(217, 19%, 38%) ); background-size: 200%; animation: loader 1s infinite reverse;}
-  
-@keyframes loader {
-    from { background-position: -100% 0; }
-    to { background-position: 100% 0; }
+.app-container { max-width: 800px; width: 100%; }
+.header h1 { font-size: 24px; line-height: 30px; color: #cee3e9; }
+
+/* Search */
+.github-search { display: flex; background-color: #323a49; padding: 10px; border-radius: 10px; margin: 20px 0; }
+.github-search .search { width: 100%; margin-right: 10px; }
+.github-search input { width: 100%; background: transparent; border: none; outline: none; font-size: 18px; line-height: 22px; font-weight: 400; padding: 8px 10px; color: #cee3e9; }
+.github-search button { background-color: #52ffa8; padding: 8px 20px; border-radius: 10px; font-size: 16px; line-height: 20px; font-weight: 500; color: #182c30; }
+
+/* User Card */
+.github-user { background-color: #323a49; padding: 50px 30px; border-radius: 10px; }
+.github-user-info { width: 100%; }
+
+/* User Avatar */
+.github-user-avatar { margin-right: 30px; }
+.github-user-avatar-img { height: 200px; width: 200px; border-radius: 50%; } 
+.github-user-avatar-img img { border-radius: 50%; height: 100%; width: 100%; object-fit: cover; }
+
+/* User Name */
+.github-user-header { justify-content: space-between; margin-bottom: 30px; }
+.github-user-header h5 { font-size: 14px; line-height: 20px; font-weight: 500; color: #cee3e9; }
+.github-user-name h2 { font-size: 22px; line-height: 26px; font-weight: 600; font-family: 'Inter', sans-serif; color: #cee3e9; margin-bottom: 5px; }
+.github-user-name p { font-size: 14px; line-height: 18px; font-weight: 400; color: #52ffa8; }
+
+/* User Bio */
+.github-user-bio {
+    margin-bottom: 30px;
 }
-  
+/* User Repo */
+.github-user-repo { background-color: #1f2632; padding: 10px 20px; margin-bottom: 30px; }
+.github-user-repo-block { max-width: 33.33%; width: 100%; color: #FFFFFF; }
+.github-user-repo-block span { font-size: 14px; line-height: 18px; font-weight: 400; }
+.github-user-repo-block h4 { font-size: 22px; line-height: 26px; font-weight: 600; }
+
+.github-user-links {
+    flex-wrap: wrap;
+}
+.github-user-link-block {
+    max-width: calc(50% - 10px);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.github-user-link-block span { display: flex; width: 16px; margin-right: 10px;  }
+.github-user-link-block h5 { font-size: 14px; line-height: 20px; font-weight: 500; color: #cee3e9; }
