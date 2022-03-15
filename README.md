@@ -1,1 +1,1 @@
-# GtiDev Finder - Github Developer Finder
+# GitDev Finder - Github Developer Finder
