@@ -1,14 +1,14 @@
 /* Common css */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 ol, ul { list-style: none; } 
-body { overflow-x: hidden;  }
+body { overflow-x: hidden; background-color: #1f2632; }
 a { display: inline-block; text-decoration: none; }
 img { width: 100%; font-size: 0; }
 input { outline: none; }
 button { background: none; outline: none; border: none; }
 
 .flex { display: flex; }
-.content { background-color: #1f2632; height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; }
+.content {  width: 100%; display: flex; justify-content: center; padding: 100px; }
 .app-container { max-width: 800px; width: 100%; }
 .header h1 { font-size: 24px; line-height: 30px; color: #cee3e9; }
 
@@ -16,7 +16,8 @@ button { background: none; outline: none; border: none; }
 .github-search { display: flex; background-color: #323a49; padding: 10px; border-radius: 10px; margin: 20px 0; }
 .github-search .search { width: 100%; margin-right: 10px; }
 .github-search input { width: 100%; background: transparent; border: none; outline: none; font-size: 18px; line-height: 22px; font-weight: 400; padding: 8px 10px; color: #cee3e9; }
-.github-search button { background-color: #52ffa8; padding: 8px 20px; border-radius: 10px; font-size: 16px; line-height: 20px; font-weight: 500; color: #182c30; }
+.github-search button { background-color: #3498db; padding: 8px 20px; border-radius: 10px; font-size: 16px; line-height: 20px; font-weight: 500; color: #182c30; cursor: pointer; }
+.github-search button.disabled { pointer-events: none; opacity: 0.6; }
 
 /* User Card */
 .github-user { background-color: #323a49; padding: 50px 30px; border-radius: 10px; }
@@ -31,26 +32,22 @@ button { background: none; outline: none; border: none; }
 .github-user-header { justify-content: space-between; margin-bottom: 30px; }
 .github-user-header h5 { font-size: 14px; line-height: 20px; font-weight: 500; color: #cee3e9; }
 .github-user-name h2 { font-size: 22px; line-height: 26px; font-weight: 600; font-family: 'Inter', sans-serif; color: #cee3e9; margin-bottom: 5px; }
-.github-user-name p { font-size: 14px; line-height: 18px; font-weight: 400; color: #52ffa8; }
+.github-user-name a { font-size: 14px; line-height: 18px; font-weight: 400; color: #3498db; }
 
 /* User Bio */
-.github-user-bio {
-    margin-bottom: 30px;
-}
+.github-user-bio { margin-bottom: 30px; }
+.github-user-bio p { font-size: 16px; line-height: 20px; color: #cee3e9; }
 /* User Repo */
 .github-user-repo { background-color: #1f2632; padding: 10px 20px; margin-bottom: 30px; }
 .github-user-repo-block { max-width: 33.33%; width: 100%; color: #FFFFFF; }
 .github-user-repo-block span { font-size: 14px; line-height: 18px; font-weight: 400; }
 .github-user-repo-block h4 { font-size: 22px; line-height: 26px; font-weight: 600; }
 
-.github-user-links {
-    flex-wrap: wrap;
-}
-.github-user-link-block {
-    max-width: calc(50% - 10px);
-    width: 100%;
-    margin-bottom: 15px;
-}
+.github-user-links { flex-wrap: wrap; } 
+.github-user-link-block { max-width: calc(50% - 10px); padding-right: 10px; width: 100%; margin-bottom: 15px; display: flex; align-items: center; }
+.github-user-link-block span { display: flex; width: 16px; height: 16px; margin-right: 10px;  }
+.github-user-link-block h5 { display: flex; }
+.github-user-link-block h5, .github-user-link-block h5 a  { font-size: 14px; line-height: 18px; font-weight: 500; color: #cee3e9; text-overflow: ellipsis; width: 100%; overflow: hidden; }
 
-.github-user-link-block span { display: flex; width: 16px; margin-right: 10px;  }
-.github-user-link-block h5 { font-size: 14px; line-height: 20px; font-weight: 500; color: #cee3e9; }
+.github-user-not-found { text-align: center; }
+.github-user-not-found h3 { color: #cee3e9; }
