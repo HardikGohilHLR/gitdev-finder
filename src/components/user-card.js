@@ -23,7 +23,7 @@ const UserCard = ({user}) => {
                     <div className="github-user-header flex">
                         <div className="github-user-name">
                             <h2>{user?.name}</h2>
-                            <a target="_blank" href={user?.html_url}>@{user?.login}</a>
+                            <a target="_blank" href={user?.html_url} rel="noreferrer">@{user?.login}</a>
                         </div>
                         <h5>Joined {getJoiningDate(user?.created_at)}</h5>
                     </div>
@@ -65,7 +65,7 @@ const UserCard = ({user}) => {
                             <h5>
                                 {
                                     user?.twitter_username ?
-                                    <a target="_blank" href={`https://twitter.com/${user?.twitter_username}`}>{user?.twitter_username}</a>
+                                    <a target="_blank" href={`https://twitter.com/${user?.twitter_username}`} rel="noreferrer">{user?.twitter_username}</a>
                                     : '-'
                                 }
                             </h5>
@@ -79,7 +79,7 @@ const UserCard = ({user}) => {
                             <h5>
                                 {
                                     user?.blog ?
-                                    <a target="_blank" href={user?.blog}>{user?.blog}</a>
+                                    <a target="_blank" href={user?.blog} rel="noreferrer">{user?.blog}</a>
                                     : '-'
                                 }
                             </h5>
