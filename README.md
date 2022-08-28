@@ -3,7 +3,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A application where user can find github profiles by searching for name, user can see profile details like repositories, followers, followings, social details, etc. 
+A application where user can find github profiles by searching for name, user can see profile details like repositories, followers, followings, social details, etc. I have used Github Users API (**[API Docs](https://docs.github.com/en/rest/users/)**) for getting information about the authenticated user.
+
 
 Live - **[GitDevFinder](https://gitdev-finder-app.netlify.app/)**
 
