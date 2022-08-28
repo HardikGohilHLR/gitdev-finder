@@ -1,5 +1,4 @@
 /* User Card */ 
-
 import React from 'react';
 
 const UserCard = ({user}) => {

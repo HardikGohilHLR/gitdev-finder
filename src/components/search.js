@@ -1,5 +1,4 @@
-/* Main Component */ 
-
+/* Search */ 
 import React, { useState } from 'react';
 
 const Search = ({searchUser}) => {

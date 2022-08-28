@@ -20,6 +20,8 @@ const GitDev = () => {
         .then(data => setUser(data));
     } 
 
+    console.log('data',user);
+
     return (
         <React.Fragment>
             <div className="content">
